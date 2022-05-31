@@ -71,21 +71,7 @@ document.querySelector('#but1').addEventListener('click', () => {
   document.querySelector('#count1').innerHTML = localStorage.counter1;
 })
 
-
-
-// let r = document.createElement('button');
-// r.classList.add('ClearCounters');
-// r.innerHTML = 'ClearCounters';
-// document.body.appendChild(r);
-
-// document.querySelector('#ClearCounters').addEventListener('Click', () => {
-//   console.log('kugggggg');
-// })
-
 document.querySelector('#clear').addEventListener('click', () => {
-  // console.log('kf');
-  // Storage.removeItem()
-  // Storage.clear()
   localStorage.counter1 = 0;
   localStorage.counter = 0;
   document.querySelector('#count').innerHTML = localStorage.counter;
@@ -103,7 +89,7 @@ if (!localStorage.counter2) { //если у меня не существует c
 document.querySelector('#count2').innerHTML = localStorage.counter2;
 
 document.querySelector('#setCounter').addEventListener('click', () => {
-  let f = prompt('Введите id', 'sss/rrr');
+  let f = prompt('Введите id блока', 'sss/rrr');
 
   if (f === 'sss') {
     document.querySelector('#count2').innerHTML = localStorage.counter;
@@ -111,7 +97,6 @@ document.querySelector('#setCounter').addEventListener('click', () => {
   if (f === 'rrr') {
     document.querySelector('#count2').innerHTML = localStorage.counter1;
   }
-
 });
 
 
